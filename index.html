@@ -181,14 +181,15 @@ modern women."
             </div>
         </div>
     </div>
+
+    <div class="mr-auto text-center py-3">
+        {% include adbanner.html %}
+    </div>
+
     {% endif %}
     {% endfor %}
 
     {% endif %} <!--endif page url is / -->
-
-    <div class="mr-auto text-center">
-        {% include adbanner.html %}
-    </div>
 
     <!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
 
@@ -240,10 +241,10 @@ modern women."
                 {% endif %}
             </div>
 
-        </div>
+            <div class="mr-auto text-center py-3">
+                {% include adbanner.html %}
+            </div>
 
-        <div class="mr-auto text-center">
-            {% include adbanner.html %}
         </div>
 
         <div class="col-md-4">
