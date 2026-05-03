@@ -1,0 +1,87 @@
+# Site
+name: 'Hijab'
+description: 'A modern website for beautiful hijab styles, modest fashion inspiration, and muslimah lifestyle ideas.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: '/hijab'
+disqus: 'hijab'
+email: 'admin@yourdomain.com'
+mailchimp-list: 'https://www.indonesiya.com'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+  fitri:
+    name:           Fitri
+    site:           https://aridjaya.com/
+    avatar:         assets/images/avatar1.jpg
+    bio:            "Passionate about sharing beautiful hijab styles, modest fashion inspiration, and daily outfit ideas for modern muslimah."
+    email:          admin@yourdomain.com
+    twitter:        https://dub.sh/twiter
+
+  jane:
+    name:           Jane
+    site:           https://indonesiya.com/
+    avatar:         assets/images/avatar2.jpg
+    bio:            "Fashion blogger who enjoys discovering trendy hijab styles, elegant outfits, and modest fashion inspiration from around the world."
+    email:          fakemail@gmail.com
+    twitter:        https://dub.sh/twiter
+
+  laila:
+    name:           Laila
+    site:           https://aridjaya.com/
+    avatar:         assets/images/avatar3.jpg
+    bio:            "Sharing creative ideas about stylish hijab looks, muslimah fashion trends, and outfit inspiration for everyday wear."
+    email:          admin@yourdomain.com
+    twitter:        https://dub.sh/twiter
+
+  nur:
+    name:           Nur
+    site:           https://hanapha.com/
+    avatar:         assets/images/avatar4.jpg
+    bio:            "Loves exploring modern hijab fashion, elegant modest wear, and inspiring outfit combinations for confident muslim women."
+    email:          fakemail@gmail.com
+    twitter:        https://dub.sh/twiter
+
+  salsa:
+    name:           Salsa
+    site:           https://indonesiya.com/
+    avatar:         assets/images/avatar5.jpg
+    bio:            "Dedicated to sharing fresh ideas about beautiful hijab styles, casual modest outfits, and fashion inspiration for daily lifestyle."
+    email:          fakemail@gmail.com
+    twitter:        https://dub.sh/twiter
+
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: laila
+      avatar: assets/images/avatar1.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
